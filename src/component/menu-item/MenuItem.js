@@ -2,11 +2,11 @@ import React from 'react';
 import '../menu.scss';
 
 export const MenuItem = ({ section }) => (
-    <div className={`${section.size} menu-item`} style={{backgroundImage:`url(${section.imageUrl})`}} >
-        
+    <div className={`${section.size} menu-item`}  >
+        <div className="background-image" style={{backgroundImage:`url(${section.imageUrl})`}}></div>
         <div className="menu-card">
             <h1 className="title"> {section.title.toUpperCase()} </h1>
-            <span className="subtitle"> Shop now!!</span>
+            <span className="subtitle"> SHOP NOW!!</span>
         </div>
     </div>
 );
